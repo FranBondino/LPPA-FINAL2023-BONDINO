@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimonDice</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title">Simon Dice</div>
+        </nav>
+    </header>
+    <main>
+        <div class="gameDataTable">
+            <button id="btnPlay">Comenzar</button>
+            <button id="btnScore" disabled = true>Puntuacion actual: 0</button>
+            <button id="btnName" disabled = true>Nombre del Jugador</button>
+            <button id="btnContact">Contactanos</button>     
+        </div>
+        <div class="simonMachine">
+            <div class="btn" data-color="Red" id="btnRed"></div>
+            <div class="btn" data-color="Yellow" id="btnYellow"></div>
+            <div class="btn" data-color="Blue" id="btnBlue"></div>
+            <div class="btn" data-color="Green" id="btnGreen"></div>
+        </div>
+    </main>
+    <div id="nameModal" class="nameModal">
+        <div class="nameModalDetails">
+            <h2>Simon Dice</h2>
+            <h3>Para comenzar, por favor ingrese su nombre</h3>
+            <input type="text" name="txtName" id="namePlayer" placeholder="Nombre del Jugador">
+            <button id="btnCompleteName">Continuar</button>
+        </div>
+    </div>
+    <div id="contactModal" class="contactModal">
+        <div class="contactModalDetails">
+            <h2>Formulario de Contacto</h2>
+            <input type="text" name="txtName" id="contactName" placeholder="Nombre">
+            <input type="text" name="txtEmail" id="contactEmail" placeholder="E-mail">
+            <textarea id="txtMessage" class="txtMessage" placeholder="Mensaje" rows="8"></textarea>
+            <button id="btnSend">Enviar</button>
+            <button id="btnClose">Cerrar</button>
+        </div>
+    </div>
+    <footer>
+        <p>Bondino Francisco LPPA 2023</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
